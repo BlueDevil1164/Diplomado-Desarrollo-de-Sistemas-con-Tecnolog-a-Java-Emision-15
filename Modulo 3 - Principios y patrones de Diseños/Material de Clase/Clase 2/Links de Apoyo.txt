@@ -1,0 +1,17 @@
+-  Classes, Inheritance, Packages & Modularization in Java
+https://dcd.tic.unam.mx/cursosadistancia/mod/url/view.php?id=65928&redirect=1
+
+-  Software Engineering | Coupling and Cohesion
+https://dcd.tic.unam.mx/cursosadistancia/mod/url/view.php?id=65929&redirect=1
+____________________________________________________________________________________________
+!!!!!!!!!!!VIDEOS!!!!!!!!!!!!!!!!
+- SOLID Principles? Nope, just Coupling and Cohesion
+https://www.youtube.com/watch?embeds_referring_euri=https%3A%2F%2Fdcd.tic.unam.mx%2F&source_ve_path=Mjg2NjQsMTY0NTAz&v=YDNR_gfBk0Q&feature=youtu.be
+
+- Los principios SOLID, ¡explicados!
+https://www.youtube.com/watch?si=r1Ngs5ie5ffriRBU&embeds_referring_euri=https%3A%2F%2Fdcd.tic.unam.mx%2F&source_ve_path=Mjg2NjQsMTY0NTA2&v=2X50sKeBAcQ&feature=youtu.be
+
+- Aprenda principios SOLID con ejemplos de CLEAN CODE
+https://www.youtube.com/watch?embeds_referring_euri=https%3A%2F%2Fdcd.tic.unam.mx%2F&source_ve_path=Mjg2NjQsMTY0NTAz&v=_jDNAf3CzeY&feature=youtu.be
+
+

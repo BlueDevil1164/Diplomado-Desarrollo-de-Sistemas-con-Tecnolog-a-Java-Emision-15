@@ -1,0 +1,20 @@
+{
+  "artista": {
+    "id": 1,
+    "nombre": "Link"
+  },
+  "descuento": 10.0,
+  "disquera": {
+    "id": 1,
+    "nombre": "MGM ESTUDIO"
+  },
+  "existencia": 10,
+  "fechaLanzamiento": "2020-11-11T11:12:12Z[UTC]",
+  "generoMusical": {
+    "descripcion": "ROCK",
+    "id": 1
+  },
+  "imagen": "u2exitos.png",
+  "precio": 100.3,
+  "titulo": "Link1"
+}

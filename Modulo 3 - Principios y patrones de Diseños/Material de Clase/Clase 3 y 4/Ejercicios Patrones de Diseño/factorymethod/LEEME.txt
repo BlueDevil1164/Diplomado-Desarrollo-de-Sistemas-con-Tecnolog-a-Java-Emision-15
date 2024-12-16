@@ -1,0 +1,9 @@
+Factory Method Pattern
+
+Queremos crear un Factory que use el factory method pattern para centralizar la lógica
+de creación de una lavadora
+
+Fijarse en el test: observarán que hay mucho en común en el proceso de crear lavadoras
+de los dos tipos (carga frontal y carga superior).
+
+Crear el factory comentado y adaptar el test para que lo use en las dos pruebas.

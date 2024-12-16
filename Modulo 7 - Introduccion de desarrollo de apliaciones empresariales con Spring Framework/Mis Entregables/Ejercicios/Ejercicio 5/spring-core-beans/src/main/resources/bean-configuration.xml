@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <!-- Se crea un bean persona y se indica de donde viene -->
+    <!-- Asi se indica cómo debe de crear el bean a partir de la clase java -->
+    <bean id="empleado" class="dgtic.core.modelo.Empleado">
+        <constructor-arg value="Rebeca"/>
+        <property name="actividad" ref="gestionProyectos"/>
+        <property name="edad" value="45"/>
+    </bean>
+
+    <bean name="empleadoDos" class="dgtic.core.modelo.Empleado">
+        <constructor-arg ref="gestionProyectos"/>
+    </bean>
+    <!-- La propiedad crea un bean automatico-->
+    <!--bean name="empleadoTres" class="dgtic.core.modelo.Empleado">
+        <property name="actividad">
+            <bean class="dgtic.core.modelo.PlanificacionProyectos"/>
+        </property>
+    </bean>
+
+    <bean name="empleadoCuatro" class="dgtic.core.modelo.Empleado">
+        <constructor-arg>
+            <bean class="dgtic.core.modelo.PlanificacionProyectos"/>
+        </constructor-arg>
+        <property name="nombre" value="Tomas"/>
+        <property name="edad" value="30"/>
+    </bean-->
+
+    <bean name="empleadoTres" class="dgtic.core.modelo.Empleado">
+        <property name="actividad" ref="proyectos"/>
+    </bean>
+
+    <bean name="empleadoCuatro" class="dgtic.core.modelo.Empleado">
+        <constructor-arg ref="proyectos"/>
+        <property name="nombre" value="Tomas"/>
+        <property name="edad" value="30"/>
+    </bean>
+
+    <bean id="gestionProyectos" class="dgtic.core.modelo.GestionProyectos"/>
+    <bean id="intercambioConocimientos" class="dgtic.core.modelo.IntercambioConocimientos"/>
+    <bean id="proyectos" class="dgtic.core.modelo.PlanificacionProyectos"/>
+
+</beans>

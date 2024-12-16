@@ -1,0 +1,28 @@
+-  Javatpoint - What is the Object Oriented Programming
+https://dcd.tic.unam.mx/cursosadistancia/mod/url/view.php?id=65914&redirect=1
+
+- Developer Mozilla - Object Oriented Programming
+https://dcd.tic.unam.mx/cursosadistancia/mod/url/view.php?id=65915&redirect=1
+
+- FreeCodeCamp - What is OOP?
+https://dcd.tic.unam.mx/cursosadistancia/mod/url/view.php?id=65916&redirect=1
+
+- Creately - UML Diagrams Types and Examples
+https://dcd.tic.unam.mx/cursosadistancia/mod/url/view.php?id=65917&redirect=1
+ 
+- FreeCodeCamp - Java Unit Testing
+https://dcd.tic.unam.mx/cursosadistancia/course/view.php?id=434#:~:text=FreeCodeCamp%20%2D%20Java%20Unit%20Testing
+
+- Twilio - Java Unit Testing Effective
+https://dcd.tic.unam.mx/cursosadistancia/mod/url/view.php?id=65920&redirect=1
+___________________________________________________________________________________________________________________________________________________________________________________________
+!!!!!!!!!!!VIDEOS!!!!!!!!!!!!!!!!
+
+- UML diagrams full course 
+ https://www.youtube.com/watch?si=4MKctNBvlBBe-euV&embeds_referring_euri=https%3A%2F%2Fdcd.tic.unam.mx%2F&source_ve_path=Mjg2NjQsMTY0NTA2&v=WnMQ8HlmeXc&feature=youtu.be
+
+- Unit Testing Java
+ https://www.youtube.com/watch?si=zkWgF2AL11QmJ_VS&embeds_referring_euri=https%3A%2F%2Fdcd.tic.unam.mx%2F&source_ve_path=Mjg2NjQsMTY0NTA2&v=vZm0lHciFsQ&feature=youtu.be
+
+
+

@@ -1,0 +1,71 @@
+-- Crear la tabla A
+CREATE TABLE A (
+    numero NUMERIC NOT NULL,
+    texto CHAR(40) NOT NULL,
+    fecha DATETIME,
+    PRIMARY KEY (numero)
+);
+
+-- Crear la tabla B
+CREATE TABLE B (
+    numero NUMERIC NOT NULL,
+    texto CHAR(40) NOT NULL,
+    fecha DATETIME,
+    PRIMARY KEY (numero)
+);
+
+-- Crear la tabla C
+CREATE TABLE C (
+    numero NUMERIC NOT NULL,
+    texto CHAR(40) NOT NULL,
+    fecha DATETIME,
+    PRIMARY KEY (numero)
+);
+
+-- Insertar datos en la tabla A
+INSERT INTO A VALUES (1, 'UNO', '2018-01-01 00:00:00.000');
+INSERT INTO A VALUES (2, 'DOS', '2018-02-01 00:00:00.000');
+INSERT INTO A VALUES (3, 'TRES', '2018-03-01 00:00:00.000');
+INSERT INTO A VALUES (4, 'CUATRO', '2018-04-01 00:00:00.000');
+INSERT INTO A VALUES (5, 'CINCO', '2018-05-01 00:00:00.000');
+INSERT INTO A VALUES (6, 'SEIS', '2018-06-01 00:00:00.000');
+
+-- Insertar datos en la tabla B
+INSERT INTO B VALUES (1, 'UNO', '2018-01-01 00:00:00.000');
+INSERT INTO B VALUES (2, 'DOS', '2018-02-02 00:00:00.000');
+INSERT INTO B VALUES (3, 'III', '2018-03-03 00:00:00.000');
+INSERT INTO B VALUES (44, 'XLIV', '2018-04-04 00:00:00.000');
+INSERT INTO B VALUES (54, 'LIV', '2018-05-05 00:00:00.000');
+INSERT INTO B VALUES (64, 'LXIV', '2018-06-06 00:00:00.000');
+
+-- Insertar datos en la tabla C
+INSERT INTO C VALUES (11, '11', '2018-01-11 00:00:00.000');
+INSERT INTO C VALUES (21, '21', '2018-02-21 00:00:00.000');
+INSERT INTO C VALUES (31, '31', '2018-03-31 00:00:00.000');
+INSERT INTO C VALUES (44, 'XLIV', '2018-04-04 00:00:00.000');
+INSERT INTO C VALUES (54, 'LIV', '2018-05-05 00:00:00.000');
+INSERT INTO C VALUES (64, 'LXIV', '2018-06-06 00:00:00.000');
+
+SELECT * FROM A
+UNION
+SELECT * FROM B;
+
+-- UNION ALL permite registros duplicados
+SELECT * FROM A
+UNION ALL
+SELECT * FROM B
+ORDER BY 3;
+
+-- UNION con campos específicos
+SELECT numero, texto FROM A
+UNION  
+SELECT numero, texto FROM B
+ORDER BY 2; -- Se utiliza 2 porque estamos ordenando por el segundo campo especificado (texto)
+
+-- UNION de tres tablas
+SELECT numero, texto FROM A
+UNION  
+SELECT numero, texto FROM B
+UNION  
+SELECT numero, texto FROM C
+ORDER BY 2;

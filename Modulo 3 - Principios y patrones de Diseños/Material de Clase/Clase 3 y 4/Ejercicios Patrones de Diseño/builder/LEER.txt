@@ -1,0 +1,9 @@
+Builder Pattern
+
+En este caso vamos a modificar nuestra clase Persona para que funcione con el Patrón Builder.
+
+Hay que modificar la clase Persona para que corresponda con la programación de la clase AWTExample.
+Es decir, hay que modificar los métodos setMayor y setMenor para que se "encadenen" correctamente con sus nuevos builders.
+Por lo tanto igual hay que crear dos inner classes BuilderMayor y BuilderMenor para crear el patrón correcto.
+
+Suerte.

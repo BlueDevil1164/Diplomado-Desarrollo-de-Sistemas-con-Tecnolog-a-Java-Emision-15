@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Spring Boot Tutorial</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f9fc; /* Fondo claro */
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #4A90E2, #007BFF); /* Gradiente azul */
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+        .navbar-brand:hover {
+            color: #FFD700; /* Amarillo brillante */
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background: linear-gradient(90deg, #33D9B2, #2CA8FF); /* Gradiente */
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 15px 15px 0 0;
+        }
+        .btn-primary {
+            background: #007BFF;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #33D9B2;
+            transform: scale(1.05);
+        }
+        .form-control {
+            border-radius: 10px;
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .alert {
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand">Spring Boot UNAM - LOGIN</a>
+    </div>
+</nav>
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div th:if="${param.error}">
+                <div class="alert alert-danger text-center">Usuario o contraseña inválidos</div>
+            </div>
+            <div th:if="${param.logout}">
+                <div class="alert alert-success text-center">Se cerró la sesión correctamente.</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Login
+                </div>
+                <div class="card-body">
+                    <form method="post" role="form" th:action="@{/login}" class="form-horizontal">
+                        <div class="form-group mb-3">
+                            <label class="control-label">Usuario</label>
+                            <input type="text" id="username" name="username" class="form-control" placeholder="Ingresa tu usuario" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="control-label">Contraseña</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Ingresa tu contraseña" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

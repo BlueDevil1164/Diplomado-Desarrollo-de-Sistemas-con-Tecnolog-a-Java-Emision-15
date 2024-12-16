@@ -1,0 +1,23 @@
+Mediator Pattern
+
+La aplicación muestra un sistema de control de los dispositivos de un coche:
+inicialmente solo hay radio y teléfono pero puede extenderse en un futuro.
+
+El sistema implementa las siguientes reglas ( evento -> acción del sistema ):
+
+- encender coche -> encender radio
+                 -> apagar música teléfono
+- sonar telefono -> apagar radio
+- encender radio -> apagar música teléfono
+- apagar coche -> apagar radio
+
+Introducir una figura de mediator en el sistema de tal forma que se
+sigan respetando las normas mostradas pero de forma mas "desacoplada":
+que los objetos coche, telefono y radio no tengan referencias entre ellas.
+
+El test proporcionado nos ayudara a comprobar que nuestros cambios no
+estropean la funcionalidad implementada.
+
+Cuando cambien el código deberán adaptar el test, pero sólo la parte
+de inicialización ( método init y, según la solución, las variables).
+No hay que cambiar nada de los métodos @Test

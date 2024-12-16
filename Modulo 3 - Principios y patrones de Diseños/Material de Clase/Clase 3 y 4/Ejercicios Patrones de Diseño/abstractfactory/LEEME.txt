@@ -1,0 +1,19 @@
+Abstract Factory Pattern
+
+Nuestro sistema necesita acceder a distintos mensajes en distintos idiomas.
+
+Para ello se ha montado un sistema de interfaces para cada conjunto de mensajes
+relacionados, y clases que lo implementan para cada idioma. Las clases tienen un 
+sufijo que indica el idioma (ES y EN, por ahora, aunque pensamos ampliarlo).
+
+Si observan el test, verán que en cada test se tienen que instanciar clases para cada
+idioma, para cada conjunto de mensajes.
+
+Queremos agrupar la decision de que idioma usar en una unica invocación a un
+abstract factory.
+
+Crear este abstract factory, con una implementación para "es" y otra para "en" y
+después adaptar el test para que use éste factory.
+
+El resultado debe ser, evidentemente, que el test se supere, pero ademas cada metodo debe
+"decidir" una sola vez que idioma usar (ahora lo hace dos veces, una para cada clase).
